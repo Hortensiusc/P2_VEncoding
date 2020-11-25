@@ -1,6 +1,3 @@
-#Carlos Hortensius
-
-
 # Carlos Hortensius U150010
 
 # Practice 2  Video Encoding
@@ -16,7 +13,10 @@ os.chdir(path)
 print('Introduce the name of your file:\n')
 file = input()
 
-print('Introduce the new name for your file:\n')
-newname = input()
+print('Introduce the width for your file:\n')
+width = input()
+print('Introduce the long for your file:\n')
+long = input()
 
-subprocess.call(['mv', file, newname])
+
+
