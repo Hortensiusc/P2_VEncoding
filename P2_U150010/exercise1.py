@@ -17,3 +17,4 @@ subprocess.call(['ffprobe', '-show_streams', '-select_streams', 'v:0', video, '>
 subprocess.call(['ffprobe', '-show_streams', '-select_streams', 'a:0', video, '>', 'infoaudio.txt'])
 subprocess.call(['ffprobe', '-show_streams', '-select_streams', 'a:1', video, '>', 'infoaudio2.txt'])
 
+# Tengo los archivos de texto, ahora falta leerlos y printar cada codec
