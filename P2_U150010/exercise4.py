@@ -28,3 +28,4 @@ if option == 1:
     subprocess.call(['ffmpeg', '-i', file, '-c:v', 'Newcodecfile.mp4'])
 if option == 1:
     subprocess.call(['ffmpeg', '-i', file, '-c:v', 'Newcodecfile.mp4'])
+    
