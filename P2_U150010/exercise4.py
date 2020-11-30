@@ -15,17 +15,17 @@ file = input()
 
 print('Which video codec do you want?')
 print('1- MPEG4')
-print('2- h264+')
-print('2- MP4')
 print('2- h.264')
+print('3- h.265')
+print('4- AV1')
 option = int(input())
 
 if option == 1:
     subprocess.call(['ffmpeg', '-i', file, '-c:v', 'mpeg4', 'Newcodecfile.mp4'])
-if option == 1:
-    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'h264','Newcodecfile.mp4'])
-if option == 1:
-    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'Newcodecfile.mp4'])
-if option == 1:
-    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'Newcodecfile.mp4'])
+if option == 2:
+    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'libx264','Newcodecfil.mp4'])
+if option == 3:
+    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'libx265', 'Newcodecfile.mp4'])
+if option == 4:
+    subprocess.call(['ffmpeg', '-i', file, '-c:v', 'libaom-av1',  'Newcodecfile.mp4'])
     

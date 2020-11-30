@@ -28,8 +28,6 @@ if option == 1:
 if option == 2:
     cmd = 'ffmpeg -i %s -vf scale=%d:%d resized.png' % (file, width, height)
 
-print(cmd)
-
 subprocess.call(cmd, shell=True)
 
 
