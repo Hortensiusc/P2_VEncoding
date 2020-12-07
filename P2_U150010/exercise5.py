@@ -49,6 +49,11 @@ while True:
         print(w)
         print(h)
 
+        cmd = 'rm infovideo.txt'
+        subprocess.call(cmd, shell=True)
+        cmd = 'rm infoaudio.txt'
+        subprocess.call(cmd, shell=True)
+
         break
 
     elif option == 2:

@@ -40,3 +40,8 @@ print('Audio Codec: ',data)
 print('Dimensions of the video')
 print(w)
 print(h)
+
+cmd = 'rm infovideo.txt'
+subprocess.call(cmd, shell=True)
+cmd = 'rm infoaudio.txt'
+subprocess.call(cmd, shell=True)
